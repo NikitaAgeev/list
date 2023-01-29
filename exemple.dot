@@ -1,0 +1,47 @@
+digraph {
+  rankdir=LR;
+  pack=true;
+
+  splines=ortho;
+  
+  node [ shape=record ];
+
+  s1 [
+      label = "№1|b|c";
+  ];
+  
+  s2 [
+      label = "№2|b|c";
+  ];
+
+  s3 [
+      label = "№3|b|c";
+  ];
+
+  s4 [
+      label = "№4|b|c";
+  ];
+
+  s5 [
+      label = "№5|b|c";
+  ];
+
+  s6;
+
+  s7 [
+      label = "№7|b|c";
+  ];
+
+  s6 [
+      label = "№6|b|c";
+  ];
+  
+
+  s1->s2->s3->s4->s5->s6->s7[color= "white"]
+
+      
+  s1 -> s3[constraint = false;];
+
+  s6 -> s2[constraint = false;];
+  s2 -> s6[constraint = false;];
+}

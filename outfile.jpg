@@ -1,0 +1,21 @@
+digraph {
+	graph [bb="0,0,185,93",
+		rankdir=LR
+	];
+	node [label="\N",
+		shape=record
+	];
+	struct1	[height=0.97222,
+		label="a|b|<port1>c",
+		pos="27,58",
+		rects="0,69.5,54,92.5 0,46.5,54,69.5 0,23.5,54,46.5",
+		width=0.75];
+	struct2	[height=0.97222,
+		label="a|{<port2>b1|b2}|c",
+		pos="150,35",
+		rects="115,46.5,185,69.5 115,23.5,150,46.5 150,23.5,185,46.5 115,0.5,185,23.5",
+		width=0.97222];
+	struct1:port1 -> struct2:port2	[label=xyz,
+		lp="84.5,42.5",
+		pos="e,115,35 54,35 77.405,35 85.656,35 104.92,35"];
+}
